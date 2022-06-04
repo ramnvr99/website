@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeeTime</title>
+
+    <style>
+        img {
+            width: 1500px;
+            border-radius: 100px;
+            float: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+            justify-content: center;
+            display: flex;
+        }
+       
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1><center>WELCOME TO TEE TIME</center></h1><br>
+    <h2><center>YOUR CHOICE, YOUR STYLE! <br> 
+        <i>You choose, we deliver! <br> The only limit is your imagination, start making your new favorite shirt with any of our adorable and lovable designs now!</i> <br> <br></center></h2>
+ 
+    <img src="images/anime1.webp" alt=""><br>
+    <h2><center>Rediscover your inner child, or your emotional teenage life, we have different designs that can cater to your everything and anything!</center></h2>
+    <br><br>
+
+    <img src="images/anime2.jpg" alt=""><br>
+    <h2><center>Our shirts come in different sizes and they also come in five different colors! Order one today!</center></h2>
+    <br><br>
+
+    <img src="images/cartoon1.jpg" alt=""><br>
+    <h2><center>Get one of our shirts now by filling out the order sheet below!</center></h2>
+    <br><br>
+
+    <form action="orders.php" method="post">
+        <table  border="5" cellpaddig="0" cellspacing="0">
+    
+            <tr>
+                <td>
+                    Name: 
+                </td>
+                <td>
+                    <input type = "text" placeholder="Name" name: = "name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <input type = "text" placeholder = "Address" name: = "address" required>
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type = "email" placeholder = "Email" name: = "email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contact No.:
+                </td>
+                <td>
+                    <input type="text" placeholder="Contact Number" name="contact" required>
+                </td>
+            </tr>
+            
+        </table>
+        <br> <br>
+        <table border="5" cellpaddig="5" cellspacing="0">
+            <tr>
+                <td>
+                    Shirt size:
+                </td>
+                <td>
+                    <input type="radio" name="size" value="1" required>(XS) Extra Small <br>
+                    <input type="radio" name="size" value="2" required>(S) Small <br>
+                    <input type="radio" name="size" value="3" required>(M) Medium <br>
+                    <input type="radio" name="size" value="4" required>(L) Large <br>
+                    <input type="radio" name="size" value="5" required>(XL) Extra Large <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Design:
+                </td>
+                <td>
+                    <input type="radio" name="design" value="1" required>Design 1 <br>
+                    <input type="radio" name="design" value="2" required>Design 2 <br>
+                    <input type="radio" name="design" value="3" required>Design 3 <br>
+                    <input type="radio" name="design" value="4" required>Design 4 <br>
+                </td>
+            </tr>
+        </table>
+        <label>
+            <input type="checkbox"> 
+            I agree to the terms and conditions
+            </label>
+            <br>
+        <tr>
+            <td>
+                <input type="submit" value="Submit" name="">
+            </td>
+        </tr>   
+        
+    </form>   
+</body>
+</html>
